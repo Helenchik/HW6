@@ -1,0 +1,134 @@
+*{
+margin: 0;
+padding: 0;
+}
+html {
+font-family: "Tahoma", sans-serif;
+}
+body {
+/* width: 1213px; */
+height: 1065px;
+background-image: url(../img/background-up.jpg), url(../img/background-down.jpg);
+ background-repeat: no-repeat, no-repeat;
+ background-position: top, bottom;
+     /* background-position-y: 0, -5px; */
+ background-size: contain, cover;
+       }
+
+header{
+width: 100%;
+height: 36px;
+line-height: 36px;
+font-size: 14px;
+margin: auto;
+margin-bottom: 222px;
+justify-content: flex-end;
+ }
+
+ul{
+margin-left: 460px;
+color: #65c1d4;
+}
+div.flag,
+div.last-button{
+color: #ffffff;
+}
+
+ul li,
+.flag,
+.last-button{
+display: inline-block;
+float: left;
+padding: 0 7px;
+}
+
+ul li:last-child{
+border-right: 2px solid #65c1d4;
+}
+
+header ul li:hover,
+div.flag:hover,
+div.last-button:hover{
+background-color: rgba(0, 191, 255, 0.2);
+color: #ffffff;}
+
+section {
+width:100%;
+}
+.sign-up{
+  width: 560px;
+  padding-bottom: 20px;
+  /* height: 616px; */
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  /* border: 1px solid red; */
+  }
+h1{
+  height: 63px;
+  line-height: 63px;
+  border-bottom: 2px solid #F0FFF0;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+}
+.shadow a{
+display: inline-block;
+height: 36px;
+line-height: 36px;
+color: #ffffff;
+margin: 36px 0 34px 2px;
+background: linear-gradient(to top, #00008B, #0000FF);
+border-radius: 3px;
+box-shadow: 1px 0 0 1px #696969;}
+
+.shadow a i{
+  width: 36px;
+}
+.facebook{
+  /* width: 250px; */
+  padding: 0 35px;
+  text-decoration: none;
+}
+
+fieldset{
+  padding-top: 30px;
+  width: 277px;
+  color: #808080;
+  margin: auto;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+}
+fieldset legend{
+  color: #ffffff;
+  font-size:15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+display: block;
+margin-bottom: 15px;
+width: 277px;
+height: 36px;
+}
+p{
+  color: #808080;
+}
+
+input[type="checkbox"]{
+display: block;
+float: left;
+}
+
+button{
+width: 150px;
+height: 36px;
+margin: 20px;
+font-size:15px;
+/* text-align: center; */
+background-color: rgba(0, 191, 255, 0.2);
+color: #ffffff;
+
+}
