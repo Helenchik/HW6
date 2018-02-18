@@ -6,31 +6,43 @@ html {
 font-family: "Tahoma", sans-serif;
 }
 body {
-/* width: 1213px; */
+
+/*  Было совмещением двух backgrounds -переделала на один.
 height: 1065px;
 background-image: url(../img/background-up.jpg), url(../img/background-down.jpg);
  background-repeat: no-repeat, no-repeat;
  background-position: top, bottom;
-     /* background-position-y: 0, -5px; */
- background-size: contain, cover;
-       }
+background-size: contain, cover; */
+background-image: url(../img/background-down.jpg);
+background-size: cover;
+height: 1027px;
+width: auto;     }
 
 header{
 width: 100%;
 height: 36px;
-line-height: 36px;
+line-height: 37px;
 font-size: 14px;
+background:url(../img/background-line.jpg) repeat-x;
 margin: auto;
-margin-bottom: 222px;
-justify-content: flex-end;
  }
+.navigation-wrapper{
+width: 100%;
+position: relative;
+}
+
+.navigation{
+height: 37px;
+position: absolute;
+right: 10px;
+}
+
 
 ul{
-margin-left: 460px;
 color: #65c1d4;
 }
-div.flag,
-div.last-button{
+li.flag,
+li.last-button{
 color: #ffffff;
 }
 
@@ -39,10 +51,10 @@ ul li,
 .last-button{
 display: inline-block;
 float: left;
-padding: 0 7px;
+padding: 0 10px;
 }
 
-ul li:last-child{
+ul li:nth-child(5){
 border-right: 2px solid #65c1d4;
 }
 
@@ -54,15 +66,15 @@ color: #ffffff;}
 
 section {
 width:100%;
+margin-top: 220px;
 }
 .sign-up{
   width: 560px;
   padding-bottom: 20px;
-  /* height: 616px; */
   margin: auto;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.75);
-  /* border: 1px solid red; */
+
   }
 h1{
   height: 63px;
@@ -74,21 +86,23 @@ h1{
 }
 .shadow a{
 display: inline-block;
-height: 36px;
-line-height: 36px;
+height: 37px;
+line-height: 37px;
 color: #ffffff;
 margin: 36px 0 34px 2px;
-background: linear-gradient(to top, #00008B, #0000FF);
+background: linear-gradient(to top, #00008B, #1E90FF);
 border-radius: 3px;
-box-shadow: 1px 0 0 1px #696969;}
+box-shadow: inset -1px 1px #C0C0C0;}
 
 .shadow a i{
   width: 36px;
 }
 .facebook{
-  /* width: 250px; */
-  padding: 0 35px;
-  text-decoration: none;
+ padding: 0 35px;
+ text-decoration: none;
+ font-size: 18px;
+ font-weight:bold;
+
 }
 
 fieldset{
@@ -96,39 +110,40 @@ fieldset{
   width: 277px;
   color: #808080;
   margin: auto;
-  border-left: 1px;
-  border-right: 1px;
-  border-bottom: 1px;
+  border: none;
+  border-top: groove 2px #999;
+
 }
 fieldset legend{
   color: #ffffff;
-  font-size:15px;
+  font-size:18px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"]{
 display: block;
+padding-left: 10px;
 margin-bottom: 15px;
 width: 277px;
 height: 36px;
 }
 p{
-  color: #808080;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 input[type="checkbox"]{
 display: block;
 float: left;
-}
+height: 20px;
+line-height: 20px;}
 
 button{
 width: 150px;
 height: 36px;
 margin: 20px;
 font-size:15px;
-/* text-align: center; */
-background-color: rgba(0, 191, 255, 0.2);
+background-color: #00BFFF;
 color: #ffffff;
 
 }
